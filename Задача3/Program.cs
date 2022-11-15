@@ -4,18 +4,18 @@
 16, 4 -> кратно */
 
 Console.WriteLine("Введите первое число: ");
-int firstNumber = Convert.ToInt32 (Console.ReadLine());
+int firstNumber = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число:");
-int secondNumber = Convert.ToInt32 (Console.ReadLine());
+int secondNumber = Convert.ToInt32(Console.ReadLine());
 int Ostatok = 0;
 
-if (firstNumber==secondNumber*secondNumber)
+if (firstNumber == secondNumber * secondNumber)
 {
     System.Console.WriteLine($"Число {secondNumber} является кратным числу {firstNumber}");
 }
 
 else
 {
-    Ostatok=firstNumber%secondNumber;
+    Ostatok = firstNumber % secondNumber;
     System.Console.WriteLine($"Число {secondNumber} не является кратным числу {firstNumber}, остаток от деления равен {Ostatok}");
 }
